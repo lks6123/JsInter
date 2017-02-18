@@ -1,0 +1,103 @@
+ext {
+
+    android = [
+            compileSdkVersion: 24,
+            buildToolsVersion: "24.0.1",
+
+            javaVersion      : JavaVersion.VERSION_1_8,
+            minSdkVersion    : 16,
+            targetSdkVersion : 24,
+            applicationId    : "me.storm.ninegag",
+            versionCode      : 1,
+            versionName      : "1.0"]
+
+    depsVersion = [
+            junitVersion                       : '4.12',
+            supportVersion                     : '24.1.1',
+            multidexVersion                    : '1.0.1',
+
+            okhttpVersion                      : '3.5.0',
+            retrofitVersion                    : '2.1.0',
+            rxJavaVersion                      : '1.2.3',
+            rxJava2Version                     : '2.0.4',
+            rxAndroidVersion                   : '1.2.1',
+            rxpermissionsVersion               : '0.9.1@aar',
+            rxLifecycleVersion                 : '1.0',
+
+
+            frescoVersion                      : '1.0.0',
+            glideVersion                       : '3.7.0',
+            picassoVersion                     : '2.5.2',
+
+            greenDaoVersion                    : '3.2.0',
+            loggerVersion                      : '1.15',
+            timberVersion                      : '4.4.0',
+            ottoVersion                        : '1.3.8',
+            eventbusVersion                    : '3.0.0',
+            leakcanaryAndroidVersion           : '1.5',
+
+            butterknifeVersion                 : '8.4.0',
+            daggerVersion                      : '2.8',
+            daggerCompilerVersion              : '2.8',
+            javaxAnnotationVersion             : '10.0-b28',
+
+            recyclerviewAnimatorsVersion       : '2.2.5',
+            recyclerviewFlexibleDividerVersion : '1.4.0',
+            materialDialogsVersion             : '0.9.2.2',
+            materialishProgressVersion         : '1.7',
+            photoViewVersion                   : '1.4.0',
+            pagerSlidingTabstripVersion        : '1.3.1',
+    ]
+
+    deps = [
+            jUnit                       : 'junit:junit:' + depsVersion.junitVersion,
+            supportV4                   : 'com.android.support:support-v4:' + depsVersion.supportVersion,
+            supportV7                   : 'com.android.support:appcompat-v7:' + depsVersion.supportVersion,
+            design                      : 'com.android.support:design:' + depsVersion.supportVersion,
+            supportAnnotations          : 'com.android.support:support-annotations:' + depsVersion.supportVersion,
+            gridlayoutV7                : 'com.android.support:gridlayout-v7:' + depsVersion.supportVersion,
+            recyclerviewV7              : 'com.android.support:recyclerview-v7:' + depsVersion.supportVersion,
+            cardviewV7                  : 'com.android.support:cardview-v7:' + depsVersion.supportVersion,
+            multiDex                    : 'com.android.support:multidex:' + depsVersion.multidexVersion,
+
+            okhttp                      : 'com.squareup.okhttp3:okhttp:' + depsVersion.okhttpVersion,
+            okhttpUrlconnection         : 'com.squareup.okhttp3:okhttp-urlconnection:' + depsVersion.okhttpVersion,
+            loggingInterceptor          : 'com.squareup.okhttp3:logging-interceptor:' + depsVersion.okhttpVersion,
+
+            retrofit                    : 'com.squareup.retrofit2:retrofit:' + depsVersion.retrofitVersion,
+            converterGson               : 'com.squareup.retrofit2:converter-gson:' + depsVersion.retrofitVersion,
+            converterJackson            : 'com.squareup.retrofit2:converter-jackson:' + depsVersion.retrofitVersion,
+            adapterRxjava               : 'com.squareup.retrofit2:adapter-rxjava:' + depsVersion.retrofitVersion,
+
+            rxjava                      : 'io.reactivex:rxjava:' + depsVersion.rxJavaVersion,
+            rxjava2                     : 'io.reactivex:rxjava2:' + depsVersion.rxJava2Version,
+            rxandroid                   : 'io.reactivex:rxandroid:' + depsVersion.rxAndroidVersion,
+            rxPermission                : 'com.tbruyelle.rxpermissions:rxpermissions:' + depsVersion.rxpermissionsVersion,
+            rxLifecycle                 : 'com.trello:rxlifecycle:' + depsVersion.rxLifecycleVersion,
+
+            fresco                      : 'com.facebook.fresco:fresco:' + depsVersion.frescoVersion,
+            glide                       : 'com.github.bumptech.glide:glide:' + depsVersion.glideVersion,
+            picasso                     : 'com.squareup.picasso:picasso:' + depsVersion.picassoVersion,
+
+            greenDao                    : 'org.greenrobot:greendao:' + depsVersion.greenDaoVersion,
+            logger                      : 'com.orhanobut:logger:' + depsVersion.loggerVersion,
+            timber                      : 'com.jakewharton.timber:timber:' + depsVersion.timberVersion,
+            otto                        : 'com.squareup:otto:' + depsVersion.ottoVersion,
+            eventbus                    : 'org.greenrobot:eventbus:',
+            leakcanaryAndroid           : 'com.squareup.leakcanary:leakcanary-android:' + depsVersion.leakcanaryAndroidVersion,
+            leakcanaryAndroidNoOp       : 'com.squareup.leakcanary:leakcanary-android-no-op:' + depsVersion.leakcanaryAndroidVersion,
+
+            butterknife                 : 'com.jakewharton:butterknife:' + depsVersion.butterknifeVersion,
+            butterknifeCompiler         : 'com.jakewharton:butterknife-compiler:' + depsVersion.butterknifeVersion,
+            dagger                      : 'com.google.dagger:dagger:' + depsVersion.daggerVersion,
+            daggerCompiler              : 'com.google.dagger:dagger-compiler:' + depsVersion.daggerCompilerVersion,
+            javaxAnnotation             : 'org.glassfish:javax.annotation:' + depsVersion.javaxAnnotationVersion,
+
+            recyclerviewAnimators       : 'jp.wasabeef:recyclerview-animators:' + depsVersion.recyclerviewAnimatorsVersion,
+            recyclerviewFlexibleDivider : 'com.yqritc:recyclerview-flexibledivider:' + depsVersion.recyclerviewFlexibleDividerVersion,
+            materialDialogs             : 'com.afollestad.material-dialogs:core:' + depsVersion.materialDialogsVersion,
+            materialishProgress         : 'com.pnikosis:materialish-progress:' + depsVersion.materialishProgressVersion,
+            photoView                   : 'com.bm.photoview:library:' + depsVersion.photoViewVersion,
+            pagerSlidingTabStrip        : 'com.gxz.pagerslidingtabstrip:library:' + depsVersion.pagerSlidingTabstripVersion,
+    ]
+}

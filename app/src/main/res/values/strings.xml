@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">JsInter</string>
+    <string name="click">点击调用JS代码</string>
+    <string name="tip">这里是TextView,点击webView中的图片后,会显示图片的地址和宽高</string>
+    <string name="tips_two">输入文字,点击按钮,会调用js中的方法</string>
+</resources>
