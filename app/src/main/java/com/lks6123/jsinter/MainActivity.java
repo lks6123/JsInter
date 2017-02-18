@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         WebSettings settings = mWebView.getSettings();
         settings.setJavaScriptEnabled(true);
         mWebView.addJavascriptInterface(new JSObject(), "myObj");
-
         mWebView.loadUrl(mUrl);
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -4,12 +4,11 @@
     <script type="text/javascript">
 
         function onButtonClick(str){
-            document.getElementById("shows").innerHTML = str;
+            document.getElementById("shows").innerHTML = "native调用js成功,文本框内容是:" + str;
             return "Java调用js代码成功";
         }
 
         function onImageClick() {
-
             var src = document.getElementById("image").src;
             var width = document.getElementById("image").width;
             var height = document.getElementById("image").height;
