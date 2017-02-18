@@ -5,6 +5,7 @@
 
         function onButtonClick(str){
             document.getElementById("shows").innerHTML = str;
+            return "Java调用js代码成功";
         }
 
         function onImageClick() {
@@ -28,7 +29,7 @@
      src="http://img05.tooopen.com/images/20150831/tooopen_sy_140882924547.jpg"
      onerror="this.src='ic_image9.jpg'"/>
 <br/>
-<textarea id= "shows"> 当点击Button后, 这里显示EditText中的内容 </textarea>
+<div id= "shows"> 当点击Button后, 这里显示EditText中的内容 </div>
 <br/>
 </body>
 </html>
